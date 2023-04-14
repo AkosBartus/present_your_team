@@ -1,4 +1,4 @@
-/*body, html, selectors*/
+/* body */
 body {
     height: 100vh;
     margin: 0px;
@@ -6,7 +6,16 @@ body {
     box-sizing: border-box;
 }
 
-/*nav*/
+/* header */
+
+h1 {
+    display: block;
+    text-align: center;
+    font-family: 'Notable', sans-serif;
+    font-size: 72px;
+    text-shadow: 2px 2px 5px hsl(0, 64%, 55%);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -41,50 +50,80 @@ nav {
     margin:0 10px;
 }
 
-/*section, main*/
+/* main content */
 
-h1 {
-    display: block;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 230px;
+}
+
+.name {
     text-align: center;
-    font-family: 'Notable', sans-serif;
-    font-size: 72px;
-    text-shadow: 2px 2px 5px hsl(0, 64%, 55%);
+    font-family: 'Hind Siliguri';
+    font-size: 24px;
+    margin-top: 30px;
 }
-
-img {
-    width: 280px;
-    height: 280px;
+  
+.person {
+    margin: 20px;
+    position: relative;
 }
-
-.grow img{
-    transition: 1s ease;
-    opacity:0.5;
-
+  
+.person img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 1s ease-in-out;
+    border: 2px solid black;
 }
-    
-.grow img:hover{
-    box-shadow: 0px 0px 10px 5px rgba(66,66,66,1);
+  
+.person:hover img {
     transform: scale(1.2);
-    transition: 1s ease;
-    opacity:1;
+}
+  
+.description {
+opacity: 0;
+transition: opacity 1s ease-in-out;
+position: absolute;
+bottom: -50px;
+left: 50%;
+transform: translateX(-50%);
+width: 80vh;
+padding: 20px;
+box-sizing: border-box;
+text-align: center;
+font-size: 16px;
+line-height: 1.5;
+top: 100%;
+font-family: 'Hind Siliguri';
+font-size: 18px;
+}
+  
+.person:hover .description {
+    opacity: 1;
+    bottom: 0;
+}
+  
+@media only screen and (max-width: 768px) {
+    .person {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .description {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
 }
 
-#main-section {
-    display: flex;
-    justify-content: space-around;
+li::marker {
+    color: rgb(65, 8, 8);
+    list-style-type: circle;
 }
 
-#p-section {
-    margin-top: 36px;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-size: 16px;
-    text-align: justify;
-}
-
-#p-section p {
-    padding: 0 50px;
-}
-
-/*footer*/
+/* footer */

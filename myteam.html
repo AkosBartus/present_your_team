@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>A keleti blokk</title>
 </head>
 <body>
     <nav>
@@ -25,44 +25,48 @@
     <header>
         <h1>A keleti blokk</h1>
     </header>
-    <section id="main-section">
-    <article class="grow"><img src="img/Akos_profpics.jpg" alt="Akos profilkép"></article>
-    <article class="grow"><img src="img/Greg_profpics.jpg" alt="Greg profilkép"></article>
-    <article class="grow"><img src="img/Evi_picture.jpg" alt="Evi profilkép"></article>
-
-    </section>
-    <section id="p-section">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum commodo aliquam.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum commodo aliquam.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum commodo aliquam.</p>
-    </section>
-    <p class="Evi">
-        Sári-Falatovics Evelin
-        Miskolci Egyetemen végzett kulturális antropológusként.  Jelenleg üzleti elemző, specifikációkat ír a fejlesztésekhez.
-        Motiváció: Szeret tanulni, új dolgokat megismerni, alkotni.  Cél: egy nap fejlesztőként dolgozni.
-        Személyiség: Alapvetően pozitív személyiség, őszinte, becsületes, kicsit bolondos, érzékeny.
-        Negatív tulajdonságok: Türelmetlen magával szemben.
-        Zenei stílus: drum & bass. Kedvencek: Culture Shock, Sub Focus.
-        Kedvenc író: Stephen King. 
-
-    </p>
-    <p class="Gergo">
-        Veress Gergő, 2016 óta Repülőtéri Rendőr Igazgatóságon a Humánigazgatási Szolgálaton dolgozik mint, ügykezelő. (Személyiadatbázis kezelése/karbantartása, három különböző típusú parancs kiállításának végrehajtását végzi, a személyi állomány
-        másodállásával foglalkozik, átiratokat készít, a szolgálati jelvényeket és igazolványokat kezeli, továbbképzési adatbázist adminisztrálja).
-        Személyiség: Terhelhetőség, csapatban kényelmesen érzi magát, de nincs problémája az önálló munkával, nem előítéletes és próbál pozitívan hozzáállni az új emberekhez.
-        Negatív tulajdonságok: Időnként eltud veszni a részletekben, túl óvatos.
-        Büszkeségek: A lánya
-        Zenei stílusok: EDM, House több ága, Hip-Hop, R&B, Rock, Pop, filmzenék
-        Motíváció: Szeretnék egy olyan ágazatban kíváló lenni, ami elismert és keresett szakma. Szeretek alkotni és azt megmutatni a világnak.
-        Legmagasabb végzettség: érettségi
-    </p>
-    <p class="Akos">
-        Bartus Ákos, 2021-ig vendéglátásban felszolgálóként dolgozott, 2021 után Bécsbe költözött és azóta főként gyerekekkel foglalkozik.
-        Magyarországon kettő sikertelen egyetem után Codecool.
-        Motiváció: A jövő az informatikában van és valami új teremtése.
-        Személyiség: Terhelhetőség, Empatikus, csapatjátékos.
-        Negatív tulajdonságok: Lusta ha nem érdekelt az adott dologban.
-    </p>
+    <div class="container">
+		<div class="person">
+			<img src="img/Evi_picture.jpg" alt="Evi profilképe">
+			<div class="name">Evi</div>
+			<div class="description">
+                <li>Falatovics Evelin, üzletielemző a jelenlegi munkám, specifikációkat írok fejlesztések számára.</li>
+                <li>Fő motiváció: Szimpatikus a Frontend fejlesztés illetve későbbiekben Backend fejlesztést szeretne végezni.</li>
+                <li>Személyiség: Az introveltált és az extroveltált személyiség között ingázó, könnyű a közös munka, alapvetően pozitív személyiség.</li>
+                <li>Negatív tulajdonságok: Türelmetlen</li>
+            </div>
+		</div>
+		<div class="person">
+			<img src="img/Akos_profpics.jpg" alt="Ákos profilképe">
+			<div class="name">Ákos</div>
+                <div class="description">
+                        <li>Bartus Ákos, 2021 óta Bécsben lakik és többnyire a Die Kinderfreunde Parkbetreuung keretein belül dolgozik, jelenleg sajnos csak otthonról. :S</li>
+                        <li>Személyiség: Türelmes, nyugodt, terhelhető.</li>
+                        <li>Negatív tulajdonságok: Lusta ha nem érdekelt az adott dologban.</li>
+                        <li>Büszkeségek: Ausztriában sikeres helytállás.</li>
+                        <li>Zenei stílusok: Hip-Hop, Trap, Pop, Progressive house.</li>
+                        <li>Motiváció: Új dolgok tervezése és létrehozása.</li>
+                        <li>Legmagasabb végzettség: Érettségi.</li>
+                </div>
+		</div>
+		<div class="person">
+			<img src="img/Greg_profpics.jpg" alt="Gergő profilképe">
+			<div class="name">Greg</div>
+			<div class="description">
+                <li>
+                    Veress Gergő, 2016 óta Repülőtéri Rendőr Igazgatóságon a Humánigazgatási Szolgálaton dolgozik mint, ügykezelő. 
+                    (Személyiadatbázis kezelése/karbantartása, három különböző típusú parancs kiállításának végrehajtását végzi, a személyi állomány
+                    másodállásával foglalkozik, átiratokat készít, a szolgálati jelvényeket és igazolványokat kezeli, továbbképzési adatbázist adminisztrálja).
+                </li>
+                <li>Személyiség: Terhelhetőség, csapatban kényelmesen érzi magát, de nincs problémája az önálló munkával, nem előítéletes és próbál pozitívan hozzáállni az új emberekhez.</li>
+                <li>Negatív tulajdonságok: Időnként eltud veszni a részletekben, túl óvatos.</li>
+                <li>Büszkeségek: A lánya</li>
+                <li>Zenei stílusok: EDM, House több ága, Hip-Hop, R&B, Rock, Pop, filmzenék</li>
+                <li>Motíváció: Szeretnék egy olyan ágazatban kíváló lenni, ami elismert és keresett szakma. Szeretek alkotni és azt megmutatni a világnak.</li>
+                <li>Legmagasabb végzettség: érettségi</li>
+            </div>
+		</div>
+	</div>
     <footer>
         <p></p>
     </footer>
